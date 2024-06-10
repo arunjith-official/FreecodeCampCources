@@ -26,6 +26,10 @@ function getGrade(score) {
   return grade;
 }
 
+function hasPassingGrade(score) {
+  return getGrade(score) !== "F";
+}
+
 console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
